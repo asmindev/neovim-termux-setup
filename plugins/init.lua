@@ -157,4 +157,21 @@ return {
       require("modes").setup()
     end,
   },
+  -- indentblankline
+  ["lukas-reineke/indent-blankline.nvim"] = {
+    config = function()
+      require("indent_blankline").setup {
+        space_char_blankline = " ",
+        show_current_context = true,
+        show_current_context_start = true,
+      }
+    end,
+    -- override_options = function()
+    --   return {
+    --     space_char_blankline = " ",
+    --     show_current_context = true,
+    --     show_current_context_start = true,
+    --   }
+    -- end,
+  },
 }

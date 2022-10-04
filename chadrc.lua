@@ -1,6 +1,6 @@
 local M = {}
 M.ui = {
-  theme = "onenord",
+  theme = "catppuccin",
 }
 M.options = {}
 
