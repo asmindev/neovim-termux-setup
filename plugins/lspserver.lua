@@ -25,3 +25,15 @@ lspconfig.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+-- clangd config for c and cpp files
+local clangcapabilities = vim.lsp.protocol.make_client_capabilities()
+clangcapabilities.textDocument.completion.completionItem.snippetSupport = true
+-- offset_encoding = "utf-16" is needed for clangd to work with unicode characters
+clangcapabilities.offsetEncoding = { "utf-16" }
+lspconfig.clangd.setup {
+  filetypes = { "c", "cpp" },
+  on_attach = on_attach,
+
+  capabilities = clangcapabilities,
+}

@@ -3,17 +3,18 @@ local set = vim.g
 set.ale_fix_on_save = 1
 set.ale_lint_on_save = 1
 set.ale_fixers = {
-   javascript = { "eslint" },
-   typescript = { "eslint" },
-   javascriptreact = { "eslint", "prettier" },
-   vue = { "eslint", "prettier" },
-   html = { "prettier" },
+  javascript = { "eslint" },
+  typescript = { "eslint" },
+  ejs = { "prettier" },
+  javascriptreact = { "eslint", "prettier" },
+  vue = { "eslint", "prettier" },
+  html = { "prettier" },
 }
 set.ale_linters = {
-   javascript = { "eslint", "prettier" },
-   typescript = { "eslint", "prettier" },
-   vue = { "eslint", "vls", "prettier" },
-   html = { "prettier" },
+  javascript = { "eslint", "prettier" },
+  typescript = { "eslint", "prettier" },
+  vue = { "eslint", "vls", "prettier" },
+  html = { "prettier" },
 }
 cmd [[ highlight ALEErrorSign ctermbg=white ]]
 cmd [[ highlight ALEWarningSign ctermbg=white ]]

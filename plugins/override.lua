@@ -52,20 +52,6 @@ M.cmp = function()
   }
 end
 
-M.treesitter = {
-  ensure_installed = {
-    "vim",
-    "html",
-    "css",
-    "javascript",
-    "json",
-    "markdown",
-    "c",
-    "python",
-    "bash",
-    "lua",
-  },
-}
 M.nvimtree = {
   view = {
     hide_root_folder = false,

@@ -1,24 +1,6 @@
 return {
   -- we are just modifying lspconfig's packer definition table
   -- put this in your custom plugins section i.e M.plugins.user field
-  ["treesitter/nvim-treesitter"] = {
-    override_options = function()
-      return {
-        ensure_installed = {
-          "vim",
-          "html",
-          "css",
-          "javascript",
-          "json",
-          "markdown",
-          "c",
-          "python",
-          "bash",
-          "lua",
-        },
-      }
-    end,
-  },
   ["kyazdani42/nvim-tree.lua"] = {
     override_options = function()
       return {
@@ -173,5 +155,8 @@ return {
     --     show_current_context_start = true,
     --   }
     -- end,
+  },
+  ["weilbith/nvim-code-action-menu"] = {
+    cmd = "CodeActionMenu",
   },
 }
